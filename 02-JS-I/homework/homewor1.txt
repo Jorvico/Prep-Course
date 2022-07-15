@@ -96,4 +96,5 @@ cualquier agujero en tu comprensión.
 
  * Valores booleanos (`true`, `false`): Los valores booleanos (true , false) son tipos de datos trabaja el lenguaje
                                         Javascript, son conocidos en la matematica como valores de verdad y su valor
-                                        puede ser falso o verdadero.     
+                                        puede ser falso o verdadero. Por lo general los valores vuleanos son el resultado
+                                        del uso de operadores condicionales y relacionalesgit     
