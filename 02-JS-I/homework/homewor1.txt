@@ -1,0 +1,99 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos 
+como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente 
+cualquier agujero en tu comprensión.
+
+************SOLUCION***********
+ * Variables: Son espacios de memoria reservados para guardar datos que va a usar nuestro programa y que
+              pueden variar durante la ejecución del mismo. Se pueden pensar como unas cajitas vacias en
+              donde se pueden guardar por ejemplo la cantidad de dinetro que tengo en mi cuanta bancaria
+              y que este valor puede cambiar a medida que aumenta o disminuye su valor.
+
+ * Strings: Es un tipo de dato del lenguaje Javascript y corresponden a cadenas de texto por ejemplo "Hola",
+            estas cadenas de texto pueden ser una letra "m", una palabra "Jorge" o varias palabras "Hola Jorge"
+            los tipos de datos Strings siempre se escriben estre comillas simples 'Jorge' o comillas dobles "Jorge".
+
+ * Funciones (argumentos, `return`);
+            Las funciones son un tipo de objeto del lenguaje Javascript llamado "callable object" son bloques de
+            codigo que nos permiten realizar calculos comparaciones y/o acciones con las variables o constantes de
+            buestro programa. Para escribir funciones en Javascript se debe seguir la siguiente estructuta:
+
+            function funcion1 (){}
+
+            function: Es una palabra clave de Javascript que indica que vamos a escribir una función.
+            funcion1: Nombre de la funcion.
+            (): En estos parentesis se escriben los argumentos si la funcion los recibe como parametros para
+                realizar las operaciones definidas.
+            {}: Dentro de los corchetes se escriben las expresiones o sentencias que va a ejecutar la fúncion
+
+            Los argumentos son parametros que recibe la funcion y que los utiliza para realizar operaciones, pueden
+            haber funciones que necesitan argumentos y otras que no. 
+
+            De igual forma una funcion puede retornar un resultado que puede ser usado despues o no, para esto se utiliza la 
+            palabra return.
+
+            - Ejemplo de una funcion que no recibe parametros y no retorna ningún valor:
+              Esta funcion nos muestra la palabra Hola por consola  
+            function saludo(x , y){
+                console.log("Hola")
+            }
+
+            - Ejemplo de una funcion que recibe parametros y no retorna ningún valor:
+              Esta funcion nos muestra un saludo por consola que en este caso seria "Hola nombre" teniendo
+              en cuenta que nombre es una variable que puede tener el valor Paola, En ese caso el resultado de
+              su ejecución seria "Hola Paola"
+            
+            function saludo(nombre){
+                console.log("Hola " + nombre)
+            }
+
+            - Ejemplo de una funcion que no recibe parametros y retorna un valor:
+              
+              Esta funcion nos retorna el valor guardado en la variable resultado, que corresponde a la suma de
+              las variables X y Z  
+            
+            function suma(){
+                var X = 28;
+                var Z = 10;
+                var resultado = X + Z;
+                return resultado;
+            }
+
+            - Ejemplo de una funcion que recibe parametros y retorna un valor:
+              
+              Esta funcion nos retorna el valor guardado en la variable resultado, que corresponde a la resta de
+              las variables a y b que se reciben de afuera de la función.  
+            
+            function resta(a, b){
+                var resultado = a + b;
+                return resultado;
+            }
+
+ * Declaraciones `if`: La declaracion 'if' nos permite controlar el flujo de ejecuacion de nuestro programa de acuerdo a si
+                       se cumple o no una condicion dada, se debe tener en cuenta que esta declaracion evalua si la condicion
+                       se cumple o no es decir si es falsa o verdadera. Su estructura es la siguiente:
+                       
+                       Si(condicion){
+                            Hacer lo que esta en esta linea
+                       }
+
+                       Para escribir la declaracion 'if' en javascrpit se realiza asi:
+
+                       if(condicion){
+                            Ejecuta las expresiones y/o sentescias dentro de los corchetes
+                       }
+
+                        Ejemplo:
+
+                        if(edad > 18){
+                            console.log("Es mayor de edad");
+                        }
+
+                        Esta declaracion imprime en la consola "Es mayor de edad" si el valor guardado en la variable edad
+                        es mayor al numero 18, si el valor dentro de la variable edad es 30 ejecuta el codigo dentro de los
+                        corchetes, si no se cumple no se ejecuta los que esta dentro de los corchetes. 
+
+
+
+ * Valores booleanos (`true`, `false`): Los valores booleanos (true , false) son tipos de datos trabaja el lenguaje
+                                        Javascript, son conocidos en la matematica como valores de verdad y su valor
+                                        puede ser falso o verdadero.     
