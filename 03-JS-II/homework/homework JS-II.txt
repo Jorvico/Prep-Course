@@ -1,0 +1,58 @@
+## Instrucciones
+---
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. 
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+*********SOLUCION**********
+* `for`: En los lenguajes de programación a veces se necesita ejecutar el mismo código un número de veces determinado para esto se hace necesario usar bucles, 
+         un tipo de bucle que existe en Javascript es el bucle for. Este bucle nos permite ejecutar las mismas sentencias o expresiones mientras se cumpla una
+         condición determinada. La estructura del bucle for es la siguiente:
+
+         for ( variable_de_iteración ; condición ; incremento_o_decremento){
+            //código a ejecutar
+         }
+
+         * Variable de iteración: Es una variable que se declara y que se esa para evaluar la condicion que permite que el código se ejecute o no.
+         * Condición: Es la condicion que se evalua y que determina si se entra al bucle o no.
+         * Incremento o decremento: Define en cuantas unidades aumenta o disminuye la variable de iteración cada vez que se realiza una entrada al bucle.
+
+* `&&`, `||`, `!`
+        
+        En javascript existen un tipo de operadores llamados Operadores lógicos, estos operadores nos permiten combinar operaciones relacionales (mayor, menor....).
+        
+        -El operador && tambien conocido como AND o conjuncion nos permite evaluar si dis condiciones se cumplen al mismo tiempo
+            -Por ejemplo:
+            if( (2 > 1) && (10 > 6) )
+            En el caso anterior el condicional if devuelve un valor verdadero. Ya que:
+            if(  (2 > 1)    &&    (10 > 6) )
+                verdadero        verdadero
+            Si ambas condiciones son verdaderas la condicion es verdadera, los posibles resultados de la conjuncion se resume en la siguiente tabla de verdad
+
+            | condicion 1 | && | condicion 2 | Resultado |
+            
+            |  verdadero  | && |  verdadero  | verdadero |
+            |  verdadero  | && |    falso    |   falso   |
+            |    falso    | && |  verdadero  |   falso   |
+            |    falso    | && |    falso    |   falso   |
+
+        -El operador || tambien conocido como OR o disyunción nos permite evaluar si dis condiciones se cumplen al mismo tiempo
+            -Por ejemplo:
+            if( (20 > 100) || (10 > 6) )
+            
+            En el caso anterior el condicional if devuelve un valor verdadero. Ya que:
+            if(  (20 > 100)    ||    (10 > 6) )
+                   falso              verdadero
+
+            Si alguna de las operaciones relacionales es verdadera la condicion es verdadera, los posibles resultados de la conjuncion se resume en la siguiente tabla de verdad
+
+            | condicion 1 | || | condicion 2 | Resultado |
+            
+            |  verdadero  | || |  verdadero  | verdadero |
+            |  verdadero  | || |    falso    | verdadero |
+            |    falso    | && |  verdadero  | verdadero |
+            |    falso    | && |    falso    |   falso   |
+        
+        -El operador ! tambien conocido como NOT o disyunción nos devuelve el valor opuesto booleano de la operacion 
+            -Por ejemplo:
+            (!true): Es falso
+            (!false): Es verdadero
